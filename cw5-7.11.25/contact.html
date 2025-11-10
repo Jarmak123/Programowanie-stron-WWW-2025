@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="stylesheet" href="stylesheet_contact.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projekt 1">
+        <meta name="keywords" content="">
+        <meta name="author" content="Jakub Jarmakowicz">
+        <link rel="icon" type="image/x-icon" href="./imgs/ico.png">
+        <title>Pszczeli świat</title>
+    </head>
+
+    <body>
+        <header> <!--<img src="./imgs/header-img-1.png" alt="pszczoly" id="header-img-1">-->
+            <a href="index.html">
+            <h1>Pszczeli świat</h1>
+            <h2>Portal pszczelarski</h2>
+            <h3>"W zgodzie z naturą - tak po prostu"</h3>
+            </a>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="ranking.html">RANKING POLSKICH PASIEK</a></li>
+            <li><a href="galery.html">GALERIA WASZYCH PASIEK</a></li>
+            <li><a href="our-honeys.html">NASZE MIODY</a></li>
+            <li><a href="history.html">HISTORIA PORTALU</a></li>
+            <li><a href="contact.html">KONTAKT Z REDAKCJĄ</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form id="formularz" action="https://webdevbasics.net/scripts/demo.php" method="post" name="bees">
+                <fieldset>
+                <legend>Formularz:</legend>
+                <div id="in_fs">
+                <label for="imie">Imię*:</label>
+                <input type="text" name="imie" size="20" placeholder="Jan" required><br>
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" name="nazwisko" placeholder="Kowalski" size="20"><br>
+                <label for="plec">Płeć:</label>
+                <input type="radio" name="plec" value="m" required>Mężczyzna
+                <input type="radio" name="plec" value="k" required>Kobieta
+                <input type="radio" name="plec" value="o" required>Inna<br>
+                <label for="data_urodzenia">Data urodzenia*:</label>
+                <input type="date" name="data_urodzenia" required><br><br>
+
+                <label for="data_roz_dzialalnosci">Data rozpoczęcia działalności pszczelarskiej:</label>
+                <input type="date" name="data_roz_dzialalnosci"><br>
+                <label for="interesant">Jestem tylko interesantem:</label>
+                <input type="checkbox" name="interesant"><br><br>
+
+                <label for="mail">Email*:</label>
+                <input type="email" name="mail" placeholder="jan@kowalski.pl" size="30" required><br>
+                <label for="tel">Nr. telefonu:</label>
+                <input type="tel" name="tel" size="12" placeholder="999-999-999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br>
+
+                <label for="kontakt">Preferowana forma kontaktu:</label>
+                <select name="kontakt">
+                    <option value="email">Email</option>
+                    <option value="telefon">Telefon</option>
+                    <option value="sms">SMS</option>
+                </select><br><br>
+
+                <textarea name="tresc" rows="25" cols="30" placeholder="Treść twojej wiadomości" required></textarea><br>
+
+                <button type="submit" value="send">Wyślij</button><button type="reset" value="reset">Reset</button>
+                <label id="info"></label>
+                </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <i><small>Copyright &copy; 2025 Jakub Jarmakowicz - 174991, Inżynieria Systemów Informatycznych - Grupa 1</small></i>
+        </footer>
+        <script src="js/walidacja-formularz.js"></script>
+    </body>
+</html>
