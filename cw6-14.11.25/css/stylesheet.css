@@ -1,0 +1,14 @@
+body{
+    background-color: #F1CF35;
+}
+
+#tresc{
+    display: none;
+    background-color: white;
+}
+
+#przycisk{
+    cursor: pointer;
+}
+
+
