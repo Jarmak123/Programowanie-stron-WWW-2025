@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projekt 2">
+        <meta name="keywords" content="">
+        <meta name="author" content="Jakub Jarmakowicz">
+        <link rel="icon" type="image/x-icon" href="./imgs/ico.png">
+        <title>WEBski - Wiedza o stronach Internetowych</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+
+    <body>
+        <header class="container-fluid p-3 bg-black text-white text-center">
+        <p class="h1">WEBski</p>
+        <p>Najlepsze źródło wiedzy o tworzeniu stron w Internecie</p> 
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#" onclick="ladujPodstrona('./bs5.html')">Bootstrap5</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#" onclick="ladujPodstrona('./jquery.html')">jQuery</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" onclick="ladujPodstrona('./main.html')">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#" onclick="ladujPodstrona('./django.html')">Django</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#" onclick="ladujPodstrona('./hateemel.html')">HTML</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+    <main id="zawartosc-main">
+    </main>
+
+        <!-- <div id="blok">Powiekszenie po wskazaniu myszką</div>
+        <br>
+        <button id="przycisk">>>></button>
+        <div id="tresc">
+            <p>Dodatkowa tresc ktora moze byc ukryta lub pokazana po kliknieciu w przycisk</p>
+        </div> -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top p-5 bg-black "> 
+        <p class="col-md-4 mb-0 text-white">© 2025 WEBski, Inc</p>             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Bootstrap"> 
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="./img/footer.png"></use></svg> </a> 
+            <ul class="nav col-md-4 justify-content-end"> 
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Bootstrap5</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">jQuery</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Django</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">HTML</a></li> 
+            </ul> 
+    </footer> 
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/skrypt.js"></script>
+    <script src="./js/skrypt_przycisk.js"></script>
+    <script src="./js/content-loader.js"></script>
+    </body>
+</html>
